@@ -1,7 +1,6 @@
 # Car_Purchase_Amount-
 Car_Purchase_Amount_Prediction
 
-Car Purchase Amount Prediction Using Artificial Neural Networks (ANNs)
 1. Introduction
 The objective of this project is to develop a machine learning model, specifically utilizing Artificial Neural Networks (ANNs), to predict the total dollar amount a customer is willing to pay for a car. This prediction will be based on various customer attributes such as gender, age, annual salary, credit card debt, and net worth. The problem is formulated as a regression task, where the target variable is the continuous car purchase amount.
 
