@@ -1,51 +1,55 @@
 # Car_Purchase_Amount-
 Car_Purchase_Amount_Prediction
 
-Car Purchase Amount Predictions Using Artificial Neural Networks (ANNs)
-
+Car Purchase Amount Prediction Using Artificial Neural Networks (ANNs)
 1. Introduction
-The goal of this project is to build a machine learning model using Artificial Neural Networks (ANNs) to predict the total dollar amount a customer is willing to pay for a car based on specific attributes like:
+The objective of this project is to develop a machine learning model, specifically utilizing Artificial Neural Networks (ANNs), to predict the total dollar amount a customer is willing to pay for a car. This prediction will be based on various customer attributes such as gender, age, annual salary, credit card debt, and net worth. The problem is formulated as a regression task, where the target variable is the continuous car purchase amount.
+
+2. Data Preprocessing
+Input Features:
 
 Gender
 Age
 Annual Salary
 Credit Card Debt
 Net Worth
-This is a regression problem where the target variable is the Car Purchase Amount.
+Target Variable:
 
-2. Data Preprocessing
-Input Features: Gender, Age, Annual Salary, Credit Card Debt, and Net Worth.
-Target Variable: Car Purchase Amount.
+Car Purchase Amount
 Preprocessing Steps:
-Encoding categorical data like Gender.
-Normalizing continuous features (Annual Salary, Credit Card Debt, and Net Worth) for better model performance.
-Splitting the dataset into training and testing sets for validation purposes.
+
+Encoding Categorical Data: Convert the categorical feature "Gender" into numerical representation (e.g., 0 for female, 1 for male).
+Normalization: Scale continuous features (Annual Salary, Credit Card Debt, and Net Worth) to a common range (e.g., 0 to 1) to improve model convergence and performance.
+Data Splitting: Divide the dataset into training and testing sets to evaluate model performance on unseen data.
 3. Model Building
-The ANN model was built using Keras’ Sequential API.
-Network Architecture:
-Input Layer: 5 features (Gender, Age, Annual Salary, Credit Card Debt, Net Worth).
+ANN Architecture:
+
+Input Layer: 5 neurons (corresponding to the 5 input features)
 Hidden Layers:
-Layer 1: 25 neurons, ReLU activation.
-Layer 2: 10 neurons, ReLU activation.
-Output Layer: 1 neuron (for predicting the car purchase amount).
-Loss Function: Mean Squared Error (MSE).
-Optimizer: Adam.
+Layer 1: 25 neurons with ReLU activation
+Layer 2: 10 neurons with ReLU activation
+Output Layer: 1 neuron (predicting the car purchase amount)
+Loss Function: Mean Squared Error (MSE)
+Optimizer: Adam
+
 4. Training Process
-The model was trained for 25 epochs.
-Loss was recorded for both training and validation datasets during each epoch.
-The model showed improvement in training performance as the loss decreased over time.
+Train the model for 25 epochs.
+Monitor training and validation loss during each epoch to assess model performance.
 5. Model Evaluation
-Evaluation Metric: Mean Squared Error (MSE) was used to evaluate the model.
-Final Training Loss and Validation Loss (exact values should be retrieved from the notebook).
-The model’s predictions were tested using the unseen test data to evaluate its ability to generalize.
+Evaluation Metric: Mean Squared Error (MSE)
+
+Calculate MSE on both training and testing sets to evaluate model performance.
 6. Predictions
-A specific test case was used:
+Test Case:
+
 Gender: Male
 Age: 50
 Annual Salary: $50,000
 Credit Card Debt: $10,985
 Net Worth: $629,312
-Prediction: The model predicted a car purchase amount of $226,242.23 for this customer.
+Prediction:
+
+The model predicts a car purchase amount of $226,242.23 for this customer.
 7. Conclusion
-The ANN model successfully predicted the car purchase amount based on customer attributes.
-The model can be improved with further hyperparameter tuning to increase accuracy and decrease error.
+The ANN model successfully predicts car purchase amounts based on given customer attributes.
+Further hyperparameter tuning and exploration of different network architectures can potentially improve model accuracy and generalization.
