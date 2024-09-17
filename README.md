@@ -1,4 +1,4 @@
-# Car_Purchase_Amount-
+# Car_Purchase_Amount_Prediction
 Car_Purchase_Amount_Prediction
 
 ### 1. Introduction
